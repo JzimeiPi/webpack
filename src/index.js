@@ -1,4 +1,5 @@
 import _ from 'lodash'
+import './style/index.css'
 
 function component() {
     const el = document.createElement('div')
@@ -8,7 +9,10 @@ function component() {
     //      3、引入的依赖没用到，浏览器也会下载这个库，导致存在多余的代码
     // 解决： 使用webpack
     //      1、需要在这个文件打包 lodash 依赖，所以要在本地安装并导入依赖
-    el.innerHTML = _.join(['Hello', 'webpack', ' '])
+    el.innerHTML = _.join(['Hello', 'webpack', 'webpack.config.js'])
+    // 添加一个css样式，体验 编译 .css 文件
+    el.classList.add('div-glod')
+    
     return el
 }
 document.body.appendChild(component())
