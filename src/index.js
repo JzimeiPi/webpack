@@ -1,5 +1,5 @@
-// import _ from 'lodash'
-// import './css/index.css'
+import _ from 'lodash'
+import './css/index.css'
 
 function component() {
     const el = document.createElement('div')
@@ -11,7 +11,7 @@ function component() {
     //      1、需要在这个文件打包 lodash 依赖，所以要在本地安装并导入依赖
     el.innerHTML = _.join(['Hello', 'webpack', 'webpack.config.js'])
     // 添加一个css样式，体验 编译 .css 文件
-    el.classList.add('div-glod')
+    el.classList.add('div-color')
     
     return el
 }

@@ -19,7 +19,7 @@ module.exports = {
   },
   devServer: {    // 开发服务器
     port: '8080',   // 指定端口
-    contentBase: path.join(__dirname, 'src/index.html'),  // 内容来源(模版页面)
+    contentBase: path.join(__dirname, '/index.html'),  // 内容来源(模版页面)
     open: true,   // 编译完成直接打开浏览器
   },
   plugins: [  // 插件
