@@ -6,6 +6,7 @@ function component() {
     //      3、引入的依赖没用到，浏览器也会下载这个库，导致存在多余的代码
     // 解决： 使用webpack
     el.innerHTML = _.join(['Hello', 'webpack', ' '])
+    el.classList.add('div-color')
     return el
 }
 document.body.appendChild(component())
