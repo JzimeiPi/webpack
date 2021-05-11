@@ -1,5 +1,5 @@
-import _ from 'lodash'
-import './style/index.css'
+// import _ from 'lodash'
+// import './css/index.css'
 
 function component() {
     const el = document.createElement('div')
